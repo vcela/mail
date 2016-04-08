@@ -231,9 +231,14 @@
 <noscript>
 <meta http-equiv="Refresh" content="0;url=public/noscript.jsp" >
 </noscript>
+<link rel="stylesheet" href="/css/style-topin2.css" />
 </head>
 <body>
-
+<div class="top-wrapper">
+    <div class="top-row">
+        <a href="https://itcommunications.sk/?page_id=32" class="backtoservices">Späť na moje služby</a>
+    </div>
+</div>
 <c:if test="${ua.isChrome or ua.isSafari}">
     <%
         /*preloading splash screen images to avoid latency*/

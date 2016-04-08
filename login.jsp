@@ -401,12 +401,32 @@ if (application.getInitParameter("offlineMode") != null) {
 		<fmt:message key="favIconUrl" var="favIconUrl"/>
 	</c:if>
 	<link rel="SHORTCUT ICON" href="<c:url value='${favIconUrl}'/>">
-	
+    <script src="https://mail.itcommunications.sk/js/jquery-1.12.3.min.js"></script>
+	<link rel="stylesheet" href="https://mail.itcommunications.sk/css/style-top8.css" media="screen">
 	
 </head>
 <c:set value="/img" var="iconPath" scope="request"/>
 <body onload="onLoad();">
-
+    <div class="top-wrapper">
+        <div class="top-row">
+            <a href="https://itcommunications.sk/?page_id=32" class="backtoservices">Späť na moje služby</a>
+            <div class="username-wrapper">
+                <div class="user-ico"></div>
+                <div class="username">
+                    Váš účet 
+                </div>
+                <div class="usermenu-wrapper">
+                    <div class="menu-user-menu-sk-container">
+                        <ul id="menu-user-menu-sk" class="usermenu">
+                            <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="https://itcommunications.sk/?page_id=79">Editovať profil</a></li>
+                            <li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-32 current_page_item menu-item-210"><a href="https://itcommunications.sk/?page_id=32">Moje služby</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://mail.itcommunications.sk/js/scripts-top.js"></script>
 	<div class="LoginScreen">
 		<div class="${smallScreen?'center-small':'center'}">
 			<div class="contentBox">
